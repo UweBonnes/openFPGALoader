@@ -38,6 +38,112 @@ static std::map <int, fpga_model> fpga_list = {
 
 	{0x23727093, {"xilinx", "zynq",     "xc7z020", 6}},
 
+        /* unhandled (?) xilinx FPGA devices */
+
+        {0x01008093, {"xilinx", "xc2v", "xc2v40",   6}},
+        {0x01010093, {"xilinx", "xc2v", "xc2v80",   6}},
+        {0x01018093, {"xilinx", "xc2v", "xc2v250",  6}},
+        {0x01020093, {"xilinx", "xc2v", "xc2v500",  6}},
+        {0x01028093, {"xilinx", "xc2v", "xc2v1000", 6}},
+        {0x01030093, {"xilinx", "xc2v", "xc2v1500", 6}},
+        {0x01038093, {"xilinx", "xc2v", "xc2v2000", 6}},
+        {0x01040093, {"xilinx", "xc2v", "xc2v3000", 6}},
+        {0x01050093, {"xilinx", "xc2v", "xc2v4000", 6}},
+        {0x01060093, {"xilinx", "xc2v", "xc2v6000", 6}},
+        {0x01070093, {"xilinx", "xc2v", "xc2v8000", 6}},
+
+        {0x0140d093, {"xilinx", "spartan3", "xc3s50", 6}},
+        {0x01414093, {"xilinx", "spartan3", "xc3s200", 6}},
+        {0x0141c093, {"xilinx", "spartan3", "xc3s400", 6}},
+        {0x01428093, {"xilinx", "spartan3", "xc3s1000", 6}},
+        {0x01434093, {"xilinx", "spartan3", "xc3s1500", 6}},
+        {0x01440093, {"xilinx", "spartan3", "xc3s2000", 6}},
+        {0x01448093, {"xilinx", "spartan3", "xc3s4000", 6}},
+        {0x01450093, {"xilinx", "spartan3", "xc3s5000", 6}},
+
+        {0x01c10093, {"xilinx", "spartan3", "xc3s100e", 6}},
+        {0x01c1a093, {"xilinx", "spartan3", "xc3s250e", 6}},
+        {0x01c22093, {"xilinx", "spartan3", "xc3s500e", 6}},
+        {0x01c2e093, {"xilinx", "spartan3", "xc3s1200e", 6}},
+        {0x01c3a093, {"xilinx", "spartan3", "xc3s1600e", 6}},
+
+        {0x02210093, {"xilinx", "spartan3", "xc3s50a", 6}},
+        {0x02218093, {"xilinx", "spartan3", "xc3s100a", 6}},
+        {0x02220093, {"xilinx", "spartan3", "xc3s400a", 6}},
+        {0x02228093, {"xilinx", "spartan3", "xc3s700a", 6}},
+        {0x02230093, {"xilinx", "spartan3", "xc3s1400a", 6}},
+
+        {0x02610093, {"xilinx", "spartan3", "xc3s50an", 6}},
+        {0x02618093, {"xilinx", "spartan3", "xc3s100an", 6}},
+        {0x02620093, {"xilinx", "spartan3", "xc3s400an", 6}},
+        {0x02628093, {"xilinx", "spartan3", "xc3s700an", 6}},
+        {0x02630093, {"xilinx", "spartan3", "xc3s1400an", 6}},
+
+        {0x03840093, {"xilinx", "spartan3", "xc3sd1800", 6}},
+        {0x0384e093, {"xilinx", "spartan3", "xc3sd1340", 6}},
+
+        /* unhandled xilinx CPLD devices*/
+        {0x09602093, {"xilinx", "xc95xl", "xc9536xl", 8}},
+        {0x09604093, {"xilinx", "xc95xl", "xc9573xl", 8}},
+        {0x09608093, {"xilinx", "xc95xl", "xc95144xl", 8}},
+        {0x09618093, {"xilinx", "xc95xl", "xc95288xl", 8}},
+
+        {0x09702093, {"xilinx", "xc95xv", "xc9536xv", 8}},
+        {0x09704093, {"xilinx", "xc95xv", "xc9573xv", 8}},
+        {0x09708093, {"xilinx", "xc95xv", "xc95144xv", 8}},
+        {0x09718093, {"xilinx", "xc95xv", "xc95288xv", 8}},
+
+        {0x06c1c093, {"xilinx", "xc2c", "xc2c32_vq44", 8}},
+        {0x06c1d093, {"xilinx", "xc2c", "xc2c32_pc44/64", 8}},
+        {0x06c1b093, {"xilinx", "xc2c", "xc2c32a_qf32", 8}},
+        {0x06d1d093, {"xilinx", "xc2c", "xc2c32a_pc44", 8}},
+        {0x06e1b093, {"xilinx", "xc2c", "xc2c32a_cp56", 8}},
+        {0x06e1c093, {"xilinx", "xc2c", "xc2c32a_vq44", 8}},
+        {0x06e1d093, {"xilinx", "xc2c", "xc2c32a_pc44/64", 8}},
+
+        {0x06c5a093, {"xilinx", "xc2c", "xc2c64_pc64", 8}},
+        {0x06c5b093, {"xilinx", "xc2c", "xc2c64_cp132", 8}},
+        {0x06c5c093, {"xilinx", "xc2c", "xc2c64_vq100", 8}},
+        {0x06c5d093, {"xilinx", "xc2c", "xc2c64_cp56", 8}},
+        {0x06c5e093, {"xilinx", "xc2c", "xc2c64_vq44", 8}},
+
+        {0x06e59093, {"xilinx", "xc2c", "xc2c64a_qf48", 8}},
+        {0x06e5a093, {"xilinx", "xc2c", "xc2c64a_pc44", 8}},
+        {0x06e5b093, {"xilinx", "xc2c", "xc2c64a_cp132", 8}},
+        {0x06e5c093, {"xilinx", "xc2c", "xc2c64a_vq100", 8}},
+        {0x06e5d093, {"xilinx", "xc2c", "xc2c64a_cp56", 8}},
+        {0x06e5e093, {"xilinx", "xc2c", "xc2c64a_vq44", 8}},
+
+        {0x06d8a093, {"xilinx", "xc2c", "xc2c128_vq100", 8}},
+        {0x06d8b093, {"xilinx", "xc2c", "xc2c128_cp132", 8}},
+        {0x06d8c093, {"xilinx", "xc2c", "xc2c128_tq144", 8}},
+        {0x06d8e093, {"xilinx", "xc2c", "xc2c128_ft256", 8}},
+
+        {0x06d4a093, {"xilinx", "xc2c", "xc2c256_vq100", 8}},
+        {0x06d4b093, {"xilinx", "xc2c", "xc2c256_cp132", 8}},
+        {0x06d4c093, {"xilinx", "xc2c", "xc2c256_tq144", 8}},
+        {0x06d4d093, {"xilinx", "xc2c", "xc2c256_pq208", 8}},
+        {0x06d4e093, {"xilinx", "xc2c", "xc2c256_ft256", 8}},
+
+        {0x06d5a093, {"xilinx", "xc2c", "xc2c384_fg324", 8}},
+        {0x06d5b093, {"xilinx", "xc2c", "xc2c384_cp204", 8}},
+        {0x06d5c093, {"xilinx", "xc2c", "xc2c384_tq144", 8}},
+        {0x06d5d093, {"xilinx", "xc2c", "xc2c384_pq208", 8}},
+        {0x06d5e093, {"xilinx", "xc2c", "xc2c384_ft256", 8}},
+
+        {0x06d7a093, {"xilinx", "xc2c", "xc2c512_fg324", 8}},
+        {0x06d7c093, {"xilinx", "xc2c", "xc2c512_pq208", 8}},
+        {0x06d7e093, {"xilinx", "xc2c", "xc2c512_ft256", 8}},
+
+        /* unhandled xilinx configuration devices */
+        {0x05044093, {"xilinx", "xcfs", "xcf01s", 8}},
+        {0x05045093, {"xilinx", "xcfs", "xcf02s", 8}},
+        {0x05046093, {"xilinx", "xcfs", "xcf04s", 8}},
+
+        {0x05057093, {"xilinx", "xcfp", "xcf08p", 16}},
+        {0x05058093, {"xilinx", "xcfp", "xcf16p", 16}},
+        {0x05059093, {"xilinx", "xcfp", "xcf32p", 16}},
+
 	{0x020f20dd, {"altera", "cyclone III", "EP3C16", 10}},
 
 	{0x020f30dd, {"altera", "cyclone 10 LP", "10CL025", 10}},
